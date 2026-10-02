@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="main">
+        <div class="heading">
+            <h2>Number Guessing Game</h2>
+        </div>
+        <div class="guessingPanel">
+            <h2 id="guessedNo"></h2>
+        </div>
+        <div class="rule">
+            <h3>
+                Enter a number between 1 to 10 below.<br>
+                then press the proceed button.<br>
+                if the number showing in the above block and your number are equal you are won.
+            </h3>
+        </div>
+        <div class="message">
+            <h2 id="message"></h2>
+        </div>
+        <div class="input">
+            <input type="text" id="myNo">
+        </div>
+        <div class="button">
+            <input type="button" value="Proceed" onclick="proceedOnAction()">
+            <input type="button" value="Clear" onclick="cancelOnAction()">
+        </div>
+    </div>
+
+
     
+    <script src="app.js"></script>
 </body>
 </html>
